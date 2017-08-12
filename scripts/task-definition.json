@@ -9,7 +9,7 @@
             "memory": 256,
             "essential": true,
             "links": [
-                "tforex-redis"
+                "${IMAGE_NAME}-redis"
             ],
             "portMappings": [
                 {
@@ -25,12 +25,12 @@
                 },
                 {
                     "name": "REDIS_HOST",
-                    "value": "tforex-redis"
+                    "value": "${IMAGE_NAME}-redis"
                 }
             ]
         },
         {
-            "name": "tforex-redis",
+            "name": "${IMAGE_NAME}-redis",
             "image": "redis:latest",
             "cpu": 128,
             "memory": 128,

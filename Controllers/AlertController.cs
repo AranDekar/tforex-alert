@@ -12,8 +12,8 @@ namespace AlertApi.Controllers
 
         public AlertController(AlertContext context)
         {
-            _context = context;
 
+            _context = context;
             if (_context.AlertItems.Count() == 0)
             {
                 _context.AlertItems.Add(new AlertItem { Name = "Item1" });
