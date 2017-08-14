@@ -12,5 +12,5 @@ services:
         container_name: tforex-alert
     redis:
         image: "redis:latest"
-        container_name: tforex-alert-redis
+        container_name: tforex-redis
         

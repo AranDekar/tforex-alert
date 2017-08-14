@@ -9,7 +9,7 @@
             "memory": 256,
             "essential": true,
             "links": [
-                "${IMAGE_NAME}-redis"
+                "${IMAGE_REDIS}"
             ],
             "portMappings": [
                 {
@@ -25,12 +25,12 @@
                 },
                 {
                     "name": "REDIS_HOST",
-                    "value": "${IMAGE_NAME}-redis"
+                    "value": "${IMAGE_REDIS}"
                 }
             ]
         },
         {
-            "name": "${IMAGE_NAME}-redis",
+            "name": "${IMAGE_REDIS}",
             "image": "redis:latest",
             "cpu": 128,
             "memory": 128,

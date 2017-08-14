@@ -1,6 +1,9 @@
 #!/bin/bash
 # set environment variables used in deploy.sh and AWS task-definition.json:
 export IMAGE_NAME=tforex-alert
+export IMAGE_REDIS=tforex-redis
+export IMAGE_MONGO=tforex-mongo
+export IMAGE_MYSQL=tforex-mysql
 export IMAGE_VERSION=latest
 
 export AWS_DEFAULT_REGION=us-east-1
